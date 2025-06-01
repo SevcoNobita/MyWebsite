@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f5fb;
+      padding: 50px;
+    }
+    .settings-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #4a5ef5;
+    }
+    .setting-item {
+      margin: 20px 0;
+    }
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1em;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.5);
+    }
+    .note {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-container">
+    <h2>Profile Settings</h2>
+
+    <div class="setting-item">
+      <label>
+        Dark Mode
+        <input type="checkbox" />
+      </label>
+      <p class="note">Enable dark theme for this site.</p>
+    </div>
+
+    <div class="setting-item">
+      <label>
+        Receive Notifications
+        <input type="checkbox" checked />
+      </label>
+      <p class="note">Get notified about updates and messages.</p>
+    </div>
+
+    <div class="setting-item">
+      <label>
+        Auto Save Changes
+        <input type="checkbox" />
+      </label>
+      <p class="note">Automatically save profile changes without asking.</p>
+    </div>
+
+    <div class="setting-item">
+      <label>
+        Show Online Status
+        <input type="checkbox" checked />
+      </label>
+      <p class="note">Let others know when you're online.</p>
+    </div>
+  </div>
+</body>
+</html>
